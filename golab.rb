@@ -7,11 +7,11 @@ class Golab < Formula
 
   if OS.mac?
     url "https://github.com/cloudingcity/golab/releases/download/v0.1.0/golab_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "d9ac353aaa73f4f29044c1e8b39df6a511fb0f5245f3acefde2edae50a6db11f"
+    sha256 "16e2d3a681092eceb47c2c3fa18999531cd7504b4f8334fd39cfb40d23841ba0"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/cloudingcity/golab/releases/download/v0.1.0/golab_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "3956226b143c46e959af460f8cc29787be810124adacfec819adde783e6ed1bb"
+      sha256 "983cf88d2c7bee40e638c7daa85734aa47eae1edb182bb1b16e735c0b5d5c792"
     end
   end
   
