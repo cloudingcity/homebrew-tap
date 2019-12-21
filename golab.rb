@@ -2,16 +2,16 @@
 class Golab < Formula
   desc "A command-line tool for gitlab"
   homepage "https://github.com/cloudingcity/golab"
-  version "0.2.0"
+  version "0.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cloudingcity/golab/releases/download/v0.2.0/golab_0.2.0_Darwin_x86_64.tar.gz"
-    sha256 "6f8e5e98742c233f1f719251809cb24cc649dc101081c4825e6f42846e1a43ab"
+    url "https://github.com/cloudingcity/golab/releases/download/v0.3.0/golab_0.3.0_Darwin_x86_64.tar.gz"
+    sha256 "0715e760cf4c9978a2aece97d121c2e18e088ad6066e3610565567befed00fea"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/cloudingcity/golab/releases/download/v0.2.0/golab_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "9c6ac4fbb2e13df786f3ab5e2bfbef981906b32a679e12c7431a59e1fd11e211"
+      url "https://github.com/cloudingcity/golab/releases/download/v0.3.0/golab_0.3.0_Linux_x86_64.tar.gz"
+      sha256 "cdb39e2bc5d64d381a0503272c7b561590cd469960a378c0b039a7603d2b11b1"
     end
   end
   
