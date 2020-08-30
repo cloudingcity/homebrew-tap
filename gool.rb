@@ -7,11 +7,11 @@ class Gool < Formula
 
   if OS.mac?
     url "https://github.com/cloudingcity/gool/releases/download/v0.1.0/gool_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "890e3bbea9b98b79469ad22e048fcc0f0586ecdbc23e998ddf54d9b3c32bae6b"
+    sha256 "f4cc8e308a3494ba61820690eb23d200974819177a0feeea389a47f9c167f4b8"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/cloudingcity/gool/releases/download/v0.1.0/gool_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "b273dd3fe33243056b961ebc09aab23251cad33b278f8a28e49614cd96e1e74e"
+      sha256 "f42e81801db6cbe7cc4851a986431fa16307667270160de94325d677d3ff9a52"
     end
   end
 
