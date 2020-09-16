@@ -2,16 +2,16 @@
 class Gool < Formula
   desc "A toolkit make your programmer life easier"
   homepage "https://github.com/cloudingcity/gool"
-  version "0.7.0"
+  version "0.8.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/cloudingcity/gool/releases/download/v0.7.0/gool_0.7.0_Darwin_x86_64.tar.gz"
-    sha256 "8869424d06f87c3df6e2110ac258e17e91e746fe124546eeb371568a0076f31d"
+    url "https://github.com/cloudingcity/gool/releases/download/v0.8.0/gool_0.8.0_Darwin_x86_64.tar.gz"
+    sha256 "ee6de5e45078c60a92bf739ca4ff091eb4064854c089298ef7ed47241ff68843"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/cloudingcity/gool/releases/download/v0.7.0/gool_0.7.0_Linux_x86_64.tar.gz"
-      sha256 "540070762091c277e9e9de80efc6a2c68c843efe40d8e79ed423a0707048731d"
+      url "https://github.com/cloudingcity/gool/releases/download/v0.8.0/gool_0.8.0_Linux_x86_64.tar.gz"
+      sha256 "c6788c996db035fadc5ad6b71a37ba5827c90732069ffb0f46ff5c0c840281d7"
     end
   end
 
