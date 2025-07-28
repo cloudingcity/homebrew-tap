@@ -2,7 +2,7 @@
 cask "gool" do
   desc "A Go-based CLI toolkit for common developer tasks"
   homepage "https://github.com/cloudingcity/gool"
-  version "1.0.1"
+  version "1.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,30 @@ cask "gool" do
 
   on_macos do
     on_intel do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.1/gool_Darwin_x86_64.tar.gz"
-      sha256 "ec8dff1b20bfc6407983287de2e80e265db37f4fdfb906ffabbb9c15e8407470"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.2/gool_Darwin_x86_64.tar.gz"
+      sha256 "f1bd6040fb1197fc94615f3b64e667682006b0787ed44968960bf72d26858a9a"
     end
     on_arm do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.1/gool_Darwin_arm64.tar.gz"
-      sha256 "2ab72359ac9206ca9d8291cbfe87b07acb0122ba63790b0dec90c1d607d50c18"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.2/gool_Darwin_arm64.tar.gz"
+      sha256 "5fc0d67b4cb55810b256bcfea13f3859bd813fcbf89a4d2829bba63630e48365"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.1/gool_Linux_x86_64.tar.gz"
-      sha256 "aa97fc7f15aa407c344f2aa363a2104e8bd89c4a46dd7aab9577edc8e93ca259"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.2/gool_Linux_x86_64.tar.gz"
+      sha256 "22d31b88427f0c341351fdb6eb06c0d5ce8f5f31a95677cfb5a6bd25aa0a4983"
     end
     on_arm do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.1/gool_Linux_arm64.tar.gz"
-      sha256 "4e28a695279b415c8c0c4e60a0365e0a4982e139ff3d0e98bd77e2c0351ceda0"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.2/gool_Linux_arm64.tar.gz"
+      sha256 "7cb8617c7f4d38c304e52c362b38971a67eebfb6d4360329aada8fb204c5a41e"
+    end
+  end
+
+  postflight do
+    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+      # replace 'foo' with the actual binary name
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/foo"]
     end
   end
 
