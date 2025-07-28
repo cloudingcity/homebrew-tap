@@ -2,7 +2,7 @@
 cask "gool" do
   desc "A Go-based CLI toolkit for common developer tasks"
   homepage "https://github.com/cloudingcity/gool"
-  version "1.0.2"
+  version "1.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,30 +12,23 @@ cask "gool" do
 
   on_macos do
     on_intel do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.2/gool_Darwin_x86_64.tar.gz"
-      sha256 "f1bd6040fb1197fc94615f3b64e667682006b0787ed44968960bf72d26858a9a"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.3/gool_Darwin_x86_64.tar.gz"
+      sha256 "a4dde521c49404777b7eda9f1b208347c6753cdcde943cf3349733e0e8809eb3"
     end
     on_arm do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.2/gool_Darwin_arm64.tar.gz"
-      sha256 "5fc0d67b4cb55810b256bcfea13f3859bd813fcbf89a4d2829bba63630e48365"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.3/gool_Darwin_arm64.tar.gz"
+      sha256 "884ee8c0cf7b90a2e34c1d3e70d3d03937b0e545024afc9d9e6c532cb372ad68"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.2/gool_Linux_x86_64.tar.gz"
-      sha256 "22d31b88427f0c341351fdb6eb06c0d5ce8f5f31a95677cfb5a6bd25aa0a4983"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.3/gool_Linux_x86_64.tar.gz"
+      sha256 "af8a47a0411e29b88e6ee72d211e58648e146bad4eb0367c4cb7e6a3ffa5cf1d"
     end
     on_arm do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.2/gool_Linux_arm64.tar.gz"
-      sha256 "7cb8617c7f4d38c304e52c362b38971a67eebfb6d4360329aada8fb204c5a41e"
-    end
-  end
-
-  postflight do
-    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
-      # replace 'foo' with the actual binary name
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/foo"]
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.3/gool_Linux_arm64.tar.gz"
+      sha256 "f8cb8504effec20ce54fb1a565c99e4324cd15ec886e1cd233ad6057e94b6ba9"
     end
   end
 
