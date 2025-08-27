@@ -2,7 +2,7 @@
 cask "gool" do
   desc "A Go-based CLI toolkit for common developer tasks"
   homepage "https://github.com/cloudingcity/gool"
-  version "1.0.7"
+  version "1.0.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "gool" do
 
   on_macos do
     on_intel do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.7/gool_Darwin_x86_64.tar.gz"
-      sha256 "c6f172382ad9acc7b1d7531fce45d6ab5d82900d910a3dd75a393191d6c3e89a"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.8/gool_Darwin_x86_64.tar.gz"
+      sha256 "19b2b2f04cb7df68f122870b6d05534fc389ce7bb97672a39d891fdcac1ab746"
     end
     on_arm do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.7/gool_Darwin_arm64.tar.gz"
-      sha256 "3820717b5a11b158dae7191301dc3eefe15ee70ec3941298a136798be44d32bc"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.8/gool_Darwin_arm64.tar.gz"
+      sha256 "74bc70a0b5f08427f8d8cc70436629b23c5b1d60ede8ca9a4998fc03c5f9d240"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.7/gool_Linux_x86_64.tar.gz"
-      sha256 "cb84604755920078087be5264c34ac0cd83f044811bd8156f80d03d2a18ddb3c"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.8/gool_Linux_x86_64.tar.gz"
+      sha256 "13b1d78a63ff59b1a2c2a4588708040541f7bdf53a62e22e096c89220dded027"
     end
     on_arm do
-      url "https://github.com/cloudingcity/gool/releases/download/v1.0.7/gool_Linux_arm64.tar.gz"
-      sha256 "50fd4085af5203ff25fcde763d71d997765287da37375f7189a418e285b71ec5"
+      url "https://github.com/cloudingcity/gool/releases/download/v1.0.8/gool_Linux_arm64.tar.gz"
+      sha256 "a6b86765473af30fe6202e19e0046777e0651538c999fbd0ed9eaaf393892443"
     end
   end
 
